@@ -1,0 +1,50 @@
+﻿<Window x:Class="AvigilonAlarmDemoApp.UI.View.CommentWindow"
+               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        DataContext="{Binding Source={StaticResource mainViewModelLocator},  Path=CommentWindowViewModel}"
+        Title="CommentWindow" Height="270" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="20*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FFEAE8E8">
+        <GroupBox Header="Comments*" HorizontalAlignment="Center" Padding="10,0,10,0" FontWeight="Bold" VerticalAlignment="Top" Height="144" Width="253">
+            <Border BorderThickness="1" BorderBrush="Black" Margin="10">
+                    <TextBox HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding Path=Comment,Mode=TwoWay}"  VerticalAlignment="Top" Height="101"  Width="253" Padding="0" UseLayoutRounding="True"/>
+            </Border>
+        </GroupBox>
+            </Grid>
+        <Grid Grid.Row="1" Background="#FFEAE8E8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*"></RowDefinition>
+                <RowDefinition Height="30*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Content="* Required field" Grid.Row="0" VerticalAlignment="Top" >
+            </Label>
+            <Label Content="Comment is required" Foreground="Red" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="{Binding CommentErrorVisibility}" FontSize="12" />
+            <Button Content="Ok" Grid.Column="0" Height="20" Width="80" Grid.Row="2"  Background="#FFCBCBCB" VerticalAlignment="Top" Cursor="Hand"  >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding OkCommand}"
+        					CommandParameter="{Binding SelectedItem, ElementName=Alarms}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+            <Button Content="Cancel" Grid.Column="1" Grid.Row="2" Height="20" Width="80" Background="#FFCBCBCB" VerticalAlignment="Top" Cursor="Hand" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding Path=CancelCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+        </Grid>       
+    </Grid>
+</Window>

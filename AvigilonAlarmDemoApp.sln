@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvigilonAlarmDemoApp.DataAccesslayer", "AvigilonAlarmDemoApp.DataAccesslayer\AvigilonAlarmDemoApp.DataAccesslayer.csproj", "{D563E6F0-93FF-40E9-B237-948F4F2C7F21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvigilonAlarmDemoApp.UnitTests", "AvigilonAlarmDemoApp.UnitTests\AvigilonAlarmDemoApp.UnitTests.csproj", "{DD06B3C4-FFE3-45D0-A704-ACDC254A2630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvigilonAlarmDemoApp.BusinessLayer", "AvigilonAlarmDemoApp.BusinessLayer\AvigilonAlarmDemoApp.BusinessLayer.csproj", "{E269CBE9-C9BA-4A29-9E1A-8D23EF36FE8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvigilonAlarmDemoApp.UI", "AvigilonAlarmDemoApp.UI\AvigilonAlarmDemoApp.UI.csproj", "{0CB8A9F3-3E6F-4FC5-8EF2-558722FBB94E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvigilonAlarmDemoApp.Logging", "AvigilonAlarmDemoApp.Logging\AvigilonAlarmDemoApp.Logging.csproj", "{0931D59D-711A-4FD9-8EA4-EF217EFD49DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D563E6F0-93FF-40E9-B237-948F4F2C7F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D563E6F0-93FF-40E9-B237-948F4F2C7F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D563E6F0-93FF-40E9-B237-948F4F2C7F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D563E6F0-93FF-40E9-B237-948F4F2C7F21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD06B3C4-FFE3-45D0-A704-ACDC254A2630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD06B3C4-FFE3-45D0-A704-ACDC254A2630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD06B3C4-FFE3-45D0-A704-ACDC254A2630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD06B3C4-FFE3-45D0-A704-ACDC254A2630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E269CBE9-C9BA-4A29-9E1A-8D23EF36FE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E269CBE9-C9BA-4A29-9E1A-8D23EF36FE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E269CBE9-C9BA-4A29-9E1A-8D23EF36FE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E269CBE9-C9BA-4A29-9E1A-8D23EF36FE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CB8A9F3-3E6F-4FC5-8EF2-558722FBB94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB8A9F3-3E6F-4FC5-8EF2-558722FBB94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB8A9F3-3E6F-4FC5-8EF2-558722FBB94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB8A9F3-3E6F-4FC5-8EF2-558722FBB94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0931D59D-711A-4FD9-8EA4-EF217EFD49DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0931D59D-711A-4FD9-8EA4-EF217EFD49DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0931D59D-711A-4FD9-8EA4-EF217EFD49DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0931D59D-711A-4FD9-8EA4-EF217EFD49DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

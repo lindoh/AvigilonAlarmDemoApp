@@ -120,6 +120,7 @@ namespace AvigilonAlarmDemoApp.DataAccesslayer.Utils
             }
             catch (System.Net.WebException webEx)
             {
+                webEx = new System.Net.WebException();
                 string errMessage = webEx.Message;
 
                 try
